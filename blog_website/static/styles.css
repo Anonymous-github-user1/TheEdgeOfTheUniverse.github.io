@@ -1,0 +1,80 @@
+body {
+    background-color: var(--background);
+    margin:0 auto;
+    width:80%;
+    --background: rgb(255, 252, 249);
+}
+
+@media only screen and (max-width: 595px) {
+    body {
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    body {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    body {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 595px) {
+    .ptext {
+        font-size: larger;
+    }
+}
+
+h1, h2 {
+    margin: 20px;
+}
+
+.card {
+    margin-bottom: 30px;
+    min-height: 200px;
+}
+
+.margin_email {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.margin20 {
+    margin: 20px
+}
+
+.links {
+    font-size: 25px
+}
+
+.links:link {
+    color: darkblue
+}
+
+.links:visited {
+    color: darkblue
+}
+
+.links:hover {
+    font-weight: 450;
+}
+
+.links:active {
+    color:gray
+}
+
+.copperplate {
+    font-family: Copperplate, Papyrus, fantasy;
+}
+
+.title {
+    font-size: 50px;
+}
+
+.nodeclink {
+    text-decoration: none;
+}
