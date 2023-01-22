@@ -2,7 +2,7 @@ body {
     background-color: var(--background);
     margin:0 auto;
     width:80%;
-    --background: #28282b;
+    --background: rgb(40, 40, 43);
 }
 
 @media only screen and (max-width: 595px) {
@@ -42,7 +42,7 @@ h1, h2 {
     margin-bottom: 30px;
     min-height: 200px;
     box-shadow: 0 3px 15px lightblue;
-    background-color: #28282b;
+    background-color: rgb(35, 35, 38);
     color: rgb(255, 252, 249);
     border-color: white;
 }
@@ -60,39 +60,23 @@ h1, h2 {
     font-size: 25px
 }
 
-.pagelink:link {
-    color: lightblue
-}
-
-.pagelink:visited {
-    color: lightblue
-}
-
-.pagelink:hover {
-    font-weight: 450;
-}
-
-.pagelink:active {
-    color:gray
-}
-
 .plink {
 }
 
-.plink:link {
-    color: lightblue
+.pagelink:link, .plink:link {
+    color: lightblue;
 }
 
-.plink:visited {
-    color: lightblue
+.pagelink:visited, .plink:visited {
+    color: lightblue;
 }
 
-.plink:hover {
+.pagelink:hover, .plink:hover {
     font-weight: 450;
 }
 
-.plink:active {
-    color:gray
+.pagelink:active, .plink:active {
+    color:gray;
 }
 
 .copperplate {
@@ -113,6 +97,7 @@ h1, h2 {
 
 .btn-outline-primary {
     color: white;
+    background-color: rgb(35, 35, 38);
     border-color: white;
     box-shadow: 0 3px 10px lightblue;
 }

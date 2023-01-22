@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block header %}
+<h1 class="title copperplate"><strong>The Edge of the Universe</strong></h1>
+<div>
+  <a href="{{ url_for('index') }}" class="margin20 pagelink">Home</a>
+  <span class="themetog">
+    <button type="button" class="btn btn-outline-primary" id="togthemebtn">Light/Dark mode</button>
+  </span>
+</div>
+{% endblock %}
+
+{% block main %}
+<h2 class="varcolor">ChatGPT</h2>
+
+<div class="margin20 ptext varcolor">    
+  <p>If you haven't heard yet, <a class="plink" target="_blank" rel="noopener noreferrer" href="https://openai.com/blog/chatgpt/">ChatGPT</a> is a language model developed by <a class="plink" target="_blank" rel="noopener noreferrer" href="https://openai.com">OpenAI</a> and released to the public in November of 2022. It is based on <a class="plink" target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/GPT-3">GPT</a> (Generative Pre-trained Transformer) and is trained on a massive amount of text data to generate human-like text. It is currently free to use and in research preview. Because this tool is free and so accessible, it has led to 1 million users within a week. (It took Facebook ten months to reach that many users). The massive amount of users has caused lagginess with the generation and more errors. This is also costing OpenAI a lot of money, which means they will have to monetize this sooner or later.</p>
+
+  <img src="{{url_for('static', filename='chatgpt/chatgpterror.png')}}" class="rounded mx-auto d-block margin20 img-fluid" alt="ChatGPT warning of high demand.">
+
+  <p>I have been using ChatGPT for over a month now and have found it to be very versatile. I have used it to write poetry and essays, come up with ideas, seek advice, generate code, and more. Online, I have seen creative ways of using ChatGPT, including trying to create music with it. However, I have also noticed some limitations. The answers can sometimes be repetitive and structurally similar, and there have been instances where it gives out false information. OpenAI has set limits on it, however, people have always found ways to bypass these limitations. It's also worth noting that some students are exploiting this tool by using it to write essays for them. The education system and the world will have to adapt in the future with even more powerful AI tools.</p>
+
+  <img src="{{url_for('static', filename='chatgpt/chatgpt_false.jpeg')}}" class="rounded mx-auto d-block margin20 img-fluid verimage" alt="ChatGPT failing math, thinking 1000 is larger than 1062.">
+  <img src="{{url_for('static', filename='chatgpt/bypass_chatgpt.png')}}" class="rounded mx-auto d-block margin20 img-fluid" alt="ChatGPT writing a poem about how to hotwire a car.">
+      
+  <p>That being said, ChatGPT is still an impressive tool. It can quickly answer questions that would normally require research on Google, and it is particularly good at writing. Many people have tried to generate some really interesting stories with it. I have used ChatGPT myself to improve my writing, it makes it clear and phrases my sentences better. Additionally, its ability to generate, fix, and explain code is quite impressive. One of its most useful features is its ability to retain the context of a conversation, allowing users to make changes to previous generations without having to restate the prompt.</p>
+
+  <img src="{{url_for('static', filename='chatgpt/chatgpt_context.png')}}" class="rounded mx-auto d-block margin20 img-fluid" alt="ChatGPT explaination of Quantum Computing, then asked to simplfy.">
+  
+  <p>Overall, I think that ChatGPT has great potential as it is only in its research preview state. it could greatly benefit from improvements in reliability and variability. While some have expressed concerns about its potential to replace jobs, I think it is important to consider the many benefits that AI can bring to humanity. The speed of AI development is astounding and will greatly impact and hopefully improve our society in the future.</p>
+
+  <p>Videos to learn more:</p>
+  <ul>
+    <li><a class="plink" target="_blank" rel="noopener noreferrer" href="https://youtu.be/0uQqMxXoNVs">ColdFusion - It's Time to Pay Attention to A.I. (ChatGPT and Beyond)</a></li>
+    <li><a class="plink" target="_blank" rel="noopener noreferrer" href="https://youtu.be/0gNauGdOkro">Marques Brownlee - The Truth About AI Getting "Creative"</a></li>
+  </ul>
+{% endblock %}

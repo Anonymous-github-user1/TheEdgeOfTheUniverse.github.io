@@ -9,11 +9,26 @@ body {
     body {
         width: 90%;
     }
+    .ptext {
+        font-size: 140%;
+    }
+}
+
+@media only screen and (min-width: 595px) {
+    body {
+        width: 80%;
+    }
+    .ptext {
+        font-size: 130%;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
     body {
         width: 70%;
+    }
+    .ptext {
+        font-size: 120%;
     }
 }
 
@@ -21,13 +36,11 @@ body {
     body {
         width: 60%;
     }
-}
-
-@media only screen and (max-width: 595px) {
     .ptext {
-        font-size: larger;
+        font-size: 110%;
     }
 }
+
 
 h1, h2 {
     margin: 20px;
@@ -37,6 +50,7 @@ h1, h2 {
     margin-bottom: 30px;
     min-height: 200px;
     box-shadow: 0 5px 10px gray;
+    border-color: black
 }
 
 .margin_email {
@@ -49,42 +63,26 @@ h1, h2 {
 }
 
 .pagelink {
-    font-size: 25px
-}
-
-.pagelink:link {
-    color: darkblue
-}
-
-.pagelink:visited {
-    color: darkblue
-}
-
-.pagelink:hover {
-    font-weight: 450;
-}
-
-.pagelink:active {
-    color:gray
+    font-size: 25px;
 }
 
 .plink {
 }
 
-.plink:link {
-    color: darkblue
+.pagelink:link, .plink:link {
+    color: darkblue;
 }
 
-.plink:visited {
-    color: darkblue
+.pagelink:visited, .plink:visited {
+    color: darkblue;
 }
 
-.plink:hover {
+.pagelink:hover, .plink:hover {
     font-weight: 450;
 }
 
-.plink:active {
-    color:gray
+.pagelink:active, .plink:active {
+    color:gray;
 }
 
 .copperplate {

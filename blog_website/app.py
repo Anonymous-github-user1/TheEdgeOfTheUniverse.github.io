@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     return render_template('index.html')
-    
+
 
 @app.route('/about')
 def about():
@@ -15,6 +15,14 @@ def about():
 @app.route('/firstever')
 def firstever():
     return render_template('firstever.html')
+
+@app.route('/chatgpt')
+def chatgpt():
+    return render_template('chatgpt.html')
+
+@app.route('/ai_img')
+def ai_img():
+    return render_template('ai_img.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
