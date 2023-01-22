@@ -41,6 +41,10 @@ h1, h2 {
 .card {
     margin-bottom: 30px;
     min-height: 200px;
+    box-shadow: 0 3px 15px lightblue;
+    background-color: #28282b;
+    color: rgb(255, 252, 249);
+    border-color: white;
 }
 
 .margin_email {
@@ -52,23 +56,42 @@ h1, h2 {
     margin: 20px
 }
 
-.links {
+.pagelink {
     font-size: 25px
 }
 
-.links:link {
+.pagelink:link {
     color: lightblue
 }
 
-.links:visited {
+.pagelink:visited {
     color: lightblue
 }
 
-.links:hover {
+.pagelink:hover {
     font-weight: 450;
 }
 
-.links:active {
+.pagelink:active {
+    color:gray
+}
+
+.plink {
+}
+
+.plink:link {
+    color: lightblue
+}
+
+.plink:visited {
+    color: lightblue
+}
+
+.plink:hover {
+    font-weight: 450;
+}
+
+.plink:active {
     color:gray
 }
 
@@ -82,4 +105,31 @@ h1, h2 {
 
 .nodeclink {
     text-decoration: none;
+}
+
+.themetog {
+    float: right;
+}
+
+.btn-outline-primary {
+    color: white;
+    border-color: white;
+    box-shadow: 0 3px 10px lightblue;
+}
+
+.btn-outline-primary:hover {
+    color: black;
+    background-color: white;
+    border-color: white
+}
+
+.btn-outline-secondary {
+    color: lightblue;
+    border-color: lightblue;
+}
+
+.btn-outline-secondary:hover {
+    color: black;
+    background-color: white;
+    border-color: white
 }
