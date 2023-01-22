@@ -118,3 +118,7 @@ h1, h2 {
     background-color: white;
     border-color: white
 }
+
+.datecolor {
+    color: lightgray !important;
+}

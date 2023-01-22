@@ -103,6 +103,7 @@ h1, h2 {
 
 .btn-outline-primary {
     color: black;
+    background-color: white;
     border-color: black;
     box-shadow: 0 3px 10px gray;
 }
