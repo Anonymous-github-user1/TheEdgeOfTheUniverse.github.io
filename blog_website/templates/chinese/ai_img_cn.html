@@ -1,45 +1,45 @@
-{% extends "layout.html" %}
+{% extends "chinese/layout_cn.html" %}
 
 {% block header %}
-<h1 class="title copperplate"><strong>The Edge of the Universe™</strong></h1>
+<h1 class="title copperplate"><strong>宇宙的边缘™</strong></h1>
 <div>
-  <a href="{{ url_for('home') }}" class="margin20 pagelink">Home</a>
+  <a href="{{ url_for('home_cn') }}" class="margin20 pagelink nodeclink">主页</a>
   <span class="themetog">
-    <button type="button" class="btn btn-outline-primary" id="togthemebtn">Light/Dark mode</button>
+    <button type="button" class="btn btn-outline-primary" id="togthemebtn">亮/暗模式</button>
   </span>
 </div>
 {% endblock %}
 
 {% block main %}
-<h2 class="varcolor">AI Image Gallery</h2>
+<h2 class="varcolor">人工智能生成图</h2>
 
 <div class="margin20 ptext varcolor">    
-  <p>Some of my favorite AI image generations. From <a class="plink" target="_blank" rel="noopener noreferrer" href="https://openai.com/dall-e-2/">DALL-E 2</a> and <a class="plink" target="_blank" rel="noopener noreferrer" href="https://midjourney.com/home/">Midjourney</a></p>
+  <p>我最喜欢的一些 AI 生成的图像。 来自 <a class="plink" target="_blank" rel="noopener noreferrer" href="https://openai.com/dall-e-2/">DALL-E 2</a> 和 <a class="plink" target="_blank" rel="noopener noreferrer" href="https://midjourney.com/home/">Midjourney</a></p>
 
-  <p>(Midjourney) Prompt: dystopia by Simon Stalenhag</p>
+  <p>(Midjourney) 图片要求: dystopia by Simon Stalenhag (Simon Stalenhag 的反乌托邦)</p>
   <img src="{{url_for('static', filename='aiart/1.png')}}" class="rounded mx-auto d-block margin20 img-fluid" alt="AI generated art by Midjourney with the prompt of: dystopia by Simon Stalenhag">
   <hr>
-  <p>(Midjourney) Prompt: futuristic bedroom looking out to city view by Simon Stalenhag</p>
+  <p>(Midjourney) 图片要求: futuristic bedroom looking out to city view by Simon Stalenhag (Simon Stalenhag 的未来派卧室，眺望城市景观)</p>
   <img src="{{url_for('static', filename='aiart/2.png')}}" class="rounded mx-auto d-block margin20 img-fluid" alt="AI generated art by Midjourney with the prompt of: futuristic bedroom looking out to city view by Simon Stalenhag">
   <hr>
-  <p>(Midjourney) Prompt: post apocalypse city by Dan Matutina</p>
+  <p>(Midjourney) 图片要求: post apocalypse city by Dan Matutina (Dan Matutina 的后启示录城市)</p>
   <img src="{{url_for('static', filename='aiart/3.png')}}" class="rounded mx-auto d-block margin20 img-fluid" alt="AI generated art by Midjourney with the prompt of: post apocalypse city by Dan Matutina">
   <hr>
-  <p>(Midjourney) Prompt: futuristic city in the style of Simon Stalenhag</p>
+  <p>(Midjourney) 图片要求: futuristic city in the style of Simon Stalenhag (Simon_Stalenhag 风格的未来城市)</p>
   <img src="{{url_for('static', filename='aiart/4.png')}}" class="rounded mx-auto d-block margin20 img-fluid" alt="AI generated art by Midjourney with the prompt of: futuristic city in the style of Simon_Stalenhag">
   <hr>
-  <p>(DALL-E 2) Prompt: post-apocalyptic city with nature grown everywhere, a robot standing in the middle, photorealistic, 4k, HDR, sci-fi, futuristic, unreal engine, creative</p>
+  <p>(DALL-E 2) 图片要求: post-apocalyptic city with nature grown everywhere, a robot standing in the middle, photorealistic, 4k, HDR, sci-fi, futuristic, unreal engine, creative (后世界末日的城市，到处都是大自然，一个机器人站在中间，逼真，4k，HDR，科幻，未来派，虚幻引擎，创意)</p>
   <img src="{{url_for('static', filename='aiart/5.png')}}" class="rounded mx-auto d-block margin20 img-fluid" alt="AI generated art by DALL-E 2 with the prompt of: post-apocalyptic city with nature grown everywhere, a robot standing in the middle, photorealistic, 4k, HDR, sci-fi, futuristic, unreal engine, creative">
   <hr>
-  <p>(DALL-E 2) Prompt: backrooms, nostalgia, 4k, photorealistic, vaporwave, HDR, octane render</p>
+  <p>(DALL-E 2) 图片要求: backrooms, nostalgia, 4k, photorealistic, vaporwave, HDR, octane render ("backrooms"，怀旧，4k，逼真，蒸汽波，HDR，OC渲染)</p>
   <img src="{{url_for('static', filename='aiart/6.png')}}" class="rounded mx-auto d-block margin20 img-fluid" alt="AI generated art by DALL-E 2 with the prompt of: backrooms, nostalgia, 4k, photorealistic, vaporwave, HDR, octane render">
   <hr>
-  <p>(DALL-E 2) Prompt: backrooms, nostalgia, 4k, photorealistic, vaporwave, HDR, octane render</p>
+  <p>(DALL-E 2) 图片要求: backrooms, nostalgia, 4k, photorealistic, vaporwave, HDR, octane render ("backrooms"，怀旧，4k，逼真，蒸汽波，HDR，OC渲染)</p>
   <img src="{{url_for('static', filename='aiart/7.png')}}" class="rounded mx-auto d-block margin20 img-fluid" alt="AI generated art by DALL-E 2 with the prompt of: backrooms, nostalgia, 4k, photorealistic, vaporwave, HDR, octane render">
   <hr>
-  <p>(DALL-E 2) Prompt: a bowl of soup that is also a portal to another dimension, digital art</p>
+  <p>(DALL-E 2) 图片要求: a bowl of soup that is also a portal to another dimension, digital art (一碗汤通往另一个维度的入口，数字艺术)</p>
   <img src="{{url_for('static', filename='aiart/8.png')}}" class="rounded mx-auto d-block margin20 img-fluid" alt="AI generated art by DALL-E 2 with the prompt of: a bowl of soup that is also a portal to another dimension, digital art">
   <hr>
-  <p>(Midjourney) Prompt: backrooms, nostalgia, 4k, photorealistic, vaporwave, HDR, octane render</p>
+  <p>(Midjourney) 图片要求: backrooms, nostalgia, 4k, photorealistic, vaporwave, HDR, octane render ("backrooms"，怀旧，4k，逼真，蒸汽波，HDR，OC渲染)</p>
   <img src="{{url_for('static', filename='aiart/9.png')}}" class="rounded mx-auto d-block margin20 img-fluid" alt="AI generated art by Midjourney with the prompt of: backrooms, nostalgia, 4k, photorealistic, vaporwave, HDR, octane render">
 {% endblock %}

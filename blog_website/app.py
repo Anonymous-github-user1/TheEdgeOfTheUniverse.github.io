@@ -33,6 +33,37 @@ def chatgpt():
 @app.route('/ai_img')
 def ai_img():
     return render_template('ai_img.html')
+
+@app.route('/cn')
+def home_cn():
+    now = datetime.datetime.now()
+    x = ""
+    if now.month == 1 and now.day == 1:
+        x = "新年快乐!"
+    elif now.month == 12 and now.day == 25:
+        x = "圣诞快乐!"
+    elif now.month == 10 and now.day == 31:
+        x = "万圣节!"
+    else:
+        x = ""
+    return render_template('chinese/home_cn.html', sp_event=x)
+      
+@app.route('/about/cn')
+def about_cn():
+    return render_template('chinese/about_cn.html')
+
+@app.route('/firstever/cn')
+def firstever_cn():
+    return render_template('chinese/firstever_cn.html')
+
+@app.route('/chatgpt/cn')
+def chatgpt_cn():
+    return render_template('chinese/chatgpt_cn.html')
+
+@app.route('/ai_img/cn')
+def ai_img_cn():
+    return render_template('chinese/ai_img_cn.html')
+
     
 if __name__ == '__main__':
     app.run(debug=True)

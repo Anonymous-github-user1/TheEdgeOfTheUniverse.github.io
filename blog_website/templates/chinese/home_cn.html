@@ -1,35 +1,35 @@
-{% extends "layout.html" %}
+{% extends "chinese/layout_cn.html" %}
 
 {% block header %}
-<h1 class="title copperplate"><strong>The Edge of the Universe™</strong></h1>
+<h1 class="title copperplate"><strong>宇宙的边缘™</strong></h1>
 <h2 class="spevent"> {{sp_event}} </h2>
 <div>
-  <a href="{{ url_for('about') }}" class="margin20 pagelink">About</a>
+  <a href="{{ url_for('about_cn') }}" class="margin20 pagelink nodeclink">关于</a>
   <span class="themetog">
-    <button type="button" class="btn btn-outline-primary" id="togthemebtn">Light/Dark mode</button>
+    <button type="button" class="btn btn-outline-primary" id="togthemebtn">亮/暗模式</button>
   </span>
 </div>
 {% endblock %}
 
 {% block main %}
-<h2>Posts</h2>
+<h2>消息</h2>
   <div class="container">
     <div class="row">
       <div class="col-sm-6 mb-3 mb-sm-0">
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title">FIRST EVER <small class="text-muted datecolor">January 16th 2023</small></h5>
-            <p class="card-text">A short introduction</p>
-            <a href="{{ url_for('firstever') }}" class="btn btn-outline-secondary">Read More</a>
+            <h5 class="card-title">第一次 <small class="text-muted datecolor">2023 年 1 月 16 日</small></h5>
+            <p class="card-text">简短的介绍</p>
+            <a href="{{ url_for('firstever_cn') }}" class="btn btn-outline-secondary">更多</a>
           </div>
         </div>
       </div>
       <div class="col-sm-6 mb-3 mb-sm-0">
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title">ChatGPT <small class="text-muted datecolor">January 22nd 2023</small></h5>
-            <p class="card-text">My thoughts on the AI chatbot ChatGPT by OpenAI</p>
-            <a href="{{ url_for('chatgpt') }}" class="btn btn-outline-secondary">Read More</a>
+            <h5 class="card-title">ChatGPT <small class="text-muted datecolor">2023 年 1 月 22 日</small></h5>
+            <p class="card-text">我对 OpenAI 的人工智能机器人 ChatGPT 的看法</p>
+            <a href="{{ url_for('chatgpt_cn') }}" class="btn btn-outline-secondary">更多</a>
           </div>
         </div>
       </div>
@@ -38,9 +38,9 @@
       <div class="col-sm-6 mb-3 mb-sm-0">
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title">AI Image Gallery <small class="text-muted datecolor">Latest</small></h5>
-            <p class="card-text">Some of my favorite AI image generations. Last updated: January 22nd 2023</p>
-            <a href="{{ url_for('ai_img') }}" class="btn btn-outline-secondary">Read More</a>
+            <h5 class="card-title">人工智能生成图像 <small class="text-muted datecolor">最新</small></h5>
+            <p class="card-text">我最喜欢的一些 AI 生成的图像。最后更新: 2023 年 1 月 22 日</p>
+            <a href="{{ url_for('ai_img_cn') }}" class="btn btn-outline-secondary">更多</a>
           </div>
         </div>
       </div>
@@ -49,7 +49,7 @@
           <div class="card-body">
             <h5 class="card-title">Special title treatment <small class="text-muted datecolor">Date</small></h5>
             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-outline-secondary">Read More</a>
+            <a href="#" class="btn btn-outline-secondary">更多</a>
           </div>
         </div>
       </div>
@@ -62,7 +62,7 @@
           <div class="card-body">
             <h5 class="card-title">Special title treatment <small class="text-muted datecolor">Date</small></h5>
             <p class="card-text">With supporting text below as a natural lead-in to additional content. </p>
-            <a href="#" class="btn btn-outline-secondary">Read More</a>
+            <a href="#" class="btn btn-outline-secondary">更多</a>
           </div>
         </div>
       </div>
@@ -71,7 +71,7 @@
           <div class="card-body">
             <h5 class="card-title">Special title treatment <small class="text-muted datecolor">Date</small></h5>
             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-outline-secondary">Read More</a>
+            <a href="#" class="btn btn-outline-secondary">更多</a>
           </div>
         </div>
       </div>
@@ -82,7 +82,7 @@
           <div class="card-body">
             <h5 class="card-title">Special title treatment <small class="text-muted datecolor">Date</small></h5>
             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-outline-secondary">Read More</a>
+            <a href="#" class="btn btn-outline-secondary">更多</a>
           </div>
         </div>
       </div>
@@ -91,7 +91,7 @@
           <div class="card-body">
             <h5 class="card-title">Special title treatment <small class="text-muted datecolor">Date</small></h5>
             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-outline-secondary">Read More</a>
+            <a href="#" class="btn btn-outline-secondary">更多</a>
           </div>
         </div>
       </div>
