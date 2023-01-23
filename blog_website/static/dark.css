@@ -122,3 +122,8 @@ h1, h2 {
 .datecolor {
     color: lightgray !important;
 }
+
+.spevent {
+    font-family: "Brush Script MT", cursive;
+    color: pink;
+}

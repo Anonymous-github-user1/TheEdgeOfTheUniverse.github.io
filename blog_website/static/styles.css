@@ -113,3 +113,8 @@ h1, h2 {
     background-color: black;
     border-color: black;
 }
+
+.spevent {
+    font-family: "Brush Script MT", cursive;
+    color: darkgreen;
+}
