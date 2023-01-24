@@ -5,36 +5,7 @@ body {
     --background: rgb(40, 40, 43);
 }
 
-@media only screen and (max-width: 595px) {
-    body {
-        width: 90%;
-    }
-}
-
-@media only screen and (min-width: 1200px) {
-    body {
-        width: 70%;
-    }
-}
-
-@media only screen and (min-width: 1600px) {
-    body {
-        width: 60%;
-    }
-}
-
-@media only screen and (max-width: 595px) {
-    .ptext {
-        font-size: larger;
-    }
-}
-
 .varcolor {
-    color: rgb(255, 252, 249);
-}
-
-h1, h2 {
-    margin: 20px;
     color: rgb(255, 252, 249);
 }
 
@@ -45,22 +16,6 @@ h1, h2 {
     background-color: rgb(35, 35, 38);
     color: rgb(255, 252, 249);
     border-color: white;
-}
-
-.margin_con {
-    margin-top: 20px;
-    margin-left: 20px;
-}
-
-.margin20 {
-    margin: 20px
-}
-
-.pagelink {
-    font-size: 25px
-}
-
-.plink {
 }
 
 .pagelink:link, .plink:link {
@@ -77,22 +32,6 @@ h1, h2 {
 
 .pagelink:active, .plink:active {
     color:gray;
-}
-
-.copperplate {
-    font-family: Copperplate, Papyrus, fantasy;
-}
-
-.title {
-    font-size: 50px;
-}
-
-.nodeclink {
-    text-decoration: none;
-}
-
-.themetog, .language {
-    float: right;
 }
 
 .btn-outline-primary {

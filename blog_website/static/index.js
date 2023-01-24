@@ -7,10 +7,10 @@ window.onload = function () {
     }
 
     toggle.addEventListener("click", function () {
-        if (theme.getAttribute("href") == "/static/styles.css") {
+        if (theme.getAttribute("href") == "/static/light.css") {
             theme.href = "/static/dark.css";
         } else {
-            theme.href = "/static/styles.css";
+            theme.href = "/static/light.css";
         }
         localStorage.setItem("css", theme.href);
     });

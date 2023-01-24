@@ -1,0 +1,77 @@
+@media only screen and (max-width: 595px) {
+    body {
+        width: 90%;
+    }
+    .ptext {
+        font-size: 120%;
+    }
+    .title{
+        font-size: 45px !important;
+    }
+}
+
+@media only screen and (min-width: 595px) {
+    body {
+        width: 80%;
+    }
+    .ptext {
+        font-size: 120%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    body {
+        width: 70%;
+    }
+    .ptext {
+        font-size: 115%;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    body {
+        width: 60%;
+    }
+    .ptext {
+        font-size: 110%;
+    }
+}
+
+h1, h2 {
+    margin: 20px;
+}
+
+.margin_con {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.margin20 {
+    margin: 20px;
+}
+
+.pagelink {
+    font-size: 25px;
+}
+
+.copperplate {
+    font-family: Copperplate, Papyrus, fantasy;
+}
+
+.title {
+    font-size: 50px;
+}
+
+.nodeclink {
+    text-decoration: none;
+}
+
+.themetog, .language {
+    float: right;
+}
+
+.lan-margin {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}

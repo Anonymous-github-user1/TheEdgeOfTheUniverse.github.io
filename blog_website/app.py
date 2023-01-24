@@ -14,6 +14,8 @@ def home():
         x = "Merry Christmas!"
     elif now.month == 10 and now.day == 31:
         x = "Boo!"
+    elif now.month == 9 and now.day == 30:
+        x = "Happy Birthday to me!"
     else:
         x = ""
     return render_template('home.html', sp_event=x)
@@ -44,6 +46,8 @@ def home_cn():
         x = "圣诞快乐!"
     elif now.month == 10 and now.day == 31:
         x = "万圣节!"
+    elif now.month == 9 and now.day == 30:
+        x = "祝我生日快乐!"
     else:
         x = ""
     return render_template('chinese/home_cn.html', sp_event=x)

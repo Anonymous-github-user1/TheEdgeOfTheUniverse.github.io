@@ -1,0 +1,47 @@
+body {
+    background-color: var(--background);
+    margin:0 auto;
+    width:80%;
+    --background: rgb(255, 252, 249);
+}
+
+.card {
+    margin-bottom: 30px;
+    min-height: 200px;
+    box-shadow: 0 5px 10px gray;
+    border-color: black
+}
+
+.pagelink:link, .plink:link {
+    color: darkblue;
+}
+
+.pagelink:visited, .plink:visited {
+    color: darkblue;
+}
+
+.pagelink:hover, .plink:hover {
+    font-weight: 450;
+}
+
+.pagelink:active, .plink:active {
+    color:gray;
+}
+
+.btn-outline-primary {
+    color: black;
+    background-color: white;
+    border-color: black;
+    box-shadow: 0 3px 10px gray;
+}
+
+.btn-outline-primary:hover {
+    color: white;
+    background-color: black;
+    border-color: black;
+}
+
+.spevent {
+    font-family: "Brush Script MT", cursive;
+    color: red;
+}

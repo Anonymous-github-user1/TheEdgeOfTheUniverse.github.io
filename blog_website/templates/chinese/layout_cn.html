@@ -5,7 +5,8 @@
   <title>The Edge of the Universe™</title>
   <link rel="icon" href="{{url_for('static', filename='icon.png')}}" type="image/icon type">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}" id="stylesheet_toggle">
+  <link rel="stylesheet" href="{{url_for('static', filename='light.css')}}" id="stylesheet_toggle">
+  <link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
   <script src="{{url_for('static', filename='index.js')}}"></script>
 </head>
 
@@ -22,12 +23,10 @@
   <footer class="varcolor ptext">
     <hr>
     <div>
+      <a class="language nodeclink plink lan-margin" href="{{ url_for('home') }}">English</a>
       <h2 class="copperplate">宇宙的边缘™</h2>
-
       <span class="margin_con">电邮:</span>
       <a href="mailto:leetong.lam.1234@gmail.com" class="nodeclink plink">leetong.lam.1234@gmail.com</a>
-
-      <a class="language nodeclink plink" href="{{ url_for('home') }}">English</a>
     </div>
     
     <div>
