@@ -1,7 +1,8 @@
 {% extends "layout.html" %}
 
 {% block header %}
-<header class="varcolor">
+
+<header class="varcolor desktop">
   <h1 class="title copperplate"><strong>The Edge of the Universe™</strong></h1>
   <h2 class="spevent"> {{sp_event}} </h2>
   <div>
@@ -15,6 +16,28 @@
   </div>
   <hr>
 </header>
+
+<header class="varcolor mobile">
+  <h1 class="title copperplate"><strong>The Edge of the Universe™</strong></h1>
+  <h2 class="spevent"> {{sp_event}} </h2>
+  
+  <div class="dropdown margin20">
+    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      Menu
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="{{ url_for('about') }}">About</a></li>
+      <li><a class="dropdown-item" href="{{ url_for('music') }}">Music</a></li>
+      <li><a class="dropdown-item" href="{{ url_for('programming') }}">Programming</a></li>
+      <li><a class="dropdown-item" href="{{ url_for('ai_img') }}">AI art</a></li>
+    </ul>
+    <span class="themetog">
+      <button type="button" class="btn btn-outline-primary" id="togthemebtn">Light/Dark mode</button>
+    </span>
+  </div>
+  <hr>
+</header>
+
 {% endblock %}
 
 {% block main %}
@@ -104,7 +127,6 @@
       </div>
     </div>
   </div>
-
 {% endblock %}
 
 <!-- 

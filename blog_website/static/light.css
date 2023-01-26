@@ -8,6 +8,7 @@ body {
 .card {
     margin-bottom: 30px;
     min-height: 200px;
+    min-width: ;
     box-shadow: 0 5px 10px gray;
     border-color: black
 }
