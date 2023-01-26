@@ -1,19 +1,17 @@
 {% extends "layout.html" %}
-
 {% block header %}
-
 <header class="varcolor desktop">
   <h1 class="title copperplate"><strong>The Edge of the Universe™</strong></h1>
   <h2 class="spevent"> {{sp_event}} </h2>
-  <div>
+  <nav>
     <a href="{{ url_for('about') }}" class="margin20 pagelink">About</a>
     <a href="{{ url_for('music') }}" class="margin20 pagelink">Music</a>
     <a href="{{ url_for('programming') }}" class="margin20 pagelink">Programming</a>
     <a href="{{ url_for('ai_img') }}" class="margin20 pagelink">AI art</a>
     <span class="themetog">
-      <button type="button" class="btn btn-outline-primary" id="togthemebtn">Light/Dark mode</button>
+      <button type="button" class="btn btn-outline-primary" onclick="toggleTheme()">Light/Dark mode</button>
     </span>
-  </div>
+  </nav>
   <hr>
 </header>
 
@@ -21,7 +19,7 @@
   <h1 class="title copperplate"><strong>The Edge of the Universe™</strong></h1>
   <h2 class="spevent"> {{sp_event}} </h2>
   
-  <div class="dropdown margin20">
+  <nav class="dropdown margin20">
     <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
       Menu
     </button>
@@ -32,17 +30,15 @@
       <li><a class="dropdown-item" href="{{ url_for('ai_img') }}">AI art</a></li>
     </ul>
     <span class="themetog">
-      <button type="button" class="btn btn-outline-primary" id="togthemebtn">Light/Dark mode</button>
+      <button type="button" class="btn btn-outline-primary" onclick="toggleTheme()">Light/Dark mode</button>
     </span>
-  </div>
+  </nav>
   <hr>
 </header>
-
 {% endblock %}
 
 {% block main %}
 <h2 class="varcolor">Blog</h2>
-
   <div class="container">
     <div class="row">
       <div class="col-sm-6 mb-3 mb-sm-0">

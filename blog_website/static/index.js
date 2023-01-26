@@ -1,17 +1,20 @@
-window.onload = function () {
-    const toggle = document.getElementById("togthemebtn");
-    const theme = document.getElementById("stylesheet_toggle");
-    const selected = localStorage.getItem("css");
-    if (selected !== null) {
-      theme.href = selected;
-    }
+toggleTheme()
 
-    toggle.addEventListener("click", function () {
-        if (theme.getAttribute("href") == "/static/light.css") {
-            theme.href = "/static/dark.css";
-        } else {
-            theme.href = "/static/light.css";
-        }
-        localStorage.setItem("css", theme.href);
-    });
+function toggleTheme() {
+    var theme = document.getElementById('stylesheet');
+
+    if (theme.getAttribute('href') == '/static/light.css') {
+        theme.setAttribute('href', '/static/dark.css');
+    } else {
+        theme.setAttribute('href', '/static/light.css');
+    }
+    localStorage.setItem("stylesheet", theme.href);
+}
+
+function switchDefault() {
+        var theme = document.getElementById('stylesheet');
+        const selected = localStorage.getItem("stylesheet");
+        if (selected !== null) {
+        theme.href = selected;
+    }
 }
