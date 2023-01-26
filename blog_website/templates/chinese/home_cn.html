@@ -1,13 +1,13 @@
 {% extends "chinese/layout_cn.html" %}
 {% block header %}
 <header class="varcolor desktop">
-  <h1 class="title copperplate"><strong>宇宙的边缘™</strong></h1>
+  <h1 class="title"><strong class="cntitle">宇宙的边缘™</strong></h1>
   <h2 class="spevent"> {{sp_event}} </h2>
   <nav>
     <a href="{{ url_for('about_cn') }}" class="margin20 pagelink nodeclink">关于</a>
     <a href="{{ url_for('music_cn') }}" class="margin20 pagelink nodeclink">音乐</a>
     <a href="{{ url_for('programming_cn') }}" class="margin20 pagelink nodeclink">编程</a>
-    <a href="{{ url_for('ai_img_cn') }}" class="margin20 pagelink nodeclink">AI 艺术</a>
+    <a href="{{ url_for('ai_gallery_cn') }}" class="margin20 pagelink nodeclink">AI 艺术廊</a>
     <span class="themetog">
       <button type="button" class="btn btn-outline-primary" onclick="toggleTheme()">亮/暗模式</button>
     </span>
@@ -16,7 +16,7 @@
 </header>
 
 <header class="varcolor mobile">
-  <h1 class="title copperplate"><strong>宇宙的边缘™</strong></h1>
+  <h1 class="title"><strong class="cntitle">宇宙的边缘™</strong></h1>
   <h2 class="spevent"> {{sp_event}} </h2>
   
   <nav class="dropdown margin20">
@@ -27,7 +27,7 @@
       <li><a class="dropdown-item" href="{{ url_for('about_cn') }}">关于</a></li>
       <li><a class="dropdown-item" href="{{ url_for('music_cn') }}">音乐</a></li>
       <li><a class="dropdown-item" href="{{ url_for('programming_cn') }}">编程</a></li>
-      <li><a class="dropdown-item" href="{{ url_for('ai_img_cn') }}">AI 艺术</a></li>
+      <li><a class="dropdown-item" href="{{ url_for('ai_gallery_cn') }}">AI 艺术廊</a></li>
     </ul>
     <span class="themetog">
       <button type="button" class="btn btn-outline-primary" onclick="toggleTheme()">亮/暗模式</button>

@@ -1,13 +1,13 @@
 {% extends "layout.html" %}
 {% block header %}
 <header class="varcolor desktop">
-  <h1 class="title copperplate"><strong>The Edge of the Universe™</strong></h1>
+  <h1 class="title"><strong class="unbounded">The Edge of the Universe™</strong></h1>
   <h2 class="spevent"> {{sp_event}} </h2>
   <nav>
-    <a href="{{ url_for('about') }}" class="margin20 pagelink">About</a>
-    <a href="{{ url_for('music') }}" class="margin20 pagelink">Music</a>
-    <a href="{{ url_for('programming') }}" class="margin20 pagelink">Programming</a>
-    <a href="{{ url_for('ai_img') }}" class="margin20 pagelink">AI art</a>
+    <a href="{{ url_for('about') }}" class="margin20 pagelink nodeclink">About</a>
+    <a href="{{ url_for('music') }}" class="margin20 pagelink nodeclink">Music</a>
+    <a href="{{ url_for('programming') }}" class="margin20 pagelink nodeclink">Programming</a>
+    <a href="{{ url_for('ai_gallery') }}" class="margin20 pagelink nodeclink">AI art gallery</a>
     <span class="themetog">
       <button type="button" class="btn btn-outline-primary" onclick="toggleTheme()">Light/Dark mode</button>
     </span>
@@ -16,7 +16,7 @@
 </header>
 
 <header class="varcolor mobile">
-  <h1 class="title copperplate"><strong>The Edge of the Universe™</strong></h1>
+  <h1 class="title"><strong class="unbounded">The Edge of the Universe™</strong></h1>
   <h2 class="spevent"> {{sp_event}} </h2>
   
   <nav class="dropdown margin20">
@@ -27,7 +27,7 @@
       <li><a class="dropdown-item" href="{{ url_for('about') }}">About</a></li>
       <li><a class="dropdown-item" href="{{ url_for('music') }}">Music</a></li>
       <li><a class="dropdown-item" href="{{ url_for('programming') }}">Programming</a></li>
-      <li><a class="dropdown-item" href="{{ url_for('ai_img') }}">AI art</a></li>
+      <li><a class="dropdown-item" href="{{ url_for('ai_gallery') }}">AI art gallery</a></li>
     </ul>
     <span class="themetog">
       <button type="button" class="btn btn-outline-primary" onclick="toggleTheme()">Light/Dark mode</button>

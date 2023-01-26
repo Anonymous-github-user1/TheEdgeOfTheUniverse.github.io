@@ -32,9 +32,9 @@ def music():
 def programming():
     return render_template('programming.html')
 
-@app.route('/ai_img')
-def ai_img():
-    return render_template('ai_img.html')
+@app.route('/ai_gallery')
+def ai_gallery():
+    return render_template('ai_gallery.html')
 
 @app.route('/firstever')
 def firstever():
@@ -72,9 +72,9 @@ def music_cn():
 def programming_cn():
     return render_template('chinese/programming_cn.html')
 
-@app.route('/ai_img/cn')
-def ai_img_cn():
-    return render_template('chinese/ai_img_cn.html')
+@app.route('/ai_gallery_cn')
+def ai_gallery_cn():
+    return render_template('chinese/ai_gallery_cn.html')
 
 @app.route('/firstever/cn')
 def firstever_cn():
@@ -86,3 +86,4 @@ def chatgpt_cn():
 
 if __name__ == '__main__':
     app.run(debug=True)
+

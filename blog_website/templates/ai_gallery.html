@@ -1,6 +1,6 @@
 {% extends "layout.html" %}
 {% block main %}
-<h2 class="varcolor">AI Image Gallery</h2>
+<h2 class="varcolor">AI Art Gallery</h2>
 
 <div class="margin20 ptext varcolor">    
   <p>Some of my favorite AI image generations. From <a class="plink" target="_blank" rel="noopener noreferrer" href="https://openai.com/dall-e-2/">DALL-E 2</a> and <a class="plink" target="_blank" rel="noopener noreferrer" href="https://midjourney.com/home/">Midjourney</a></p>
@@ -31,4 +31,10 @@
   <hr>
   <p>(Midjourney) Prompt: backrooms, nostalgia, 4k, photorealistic, vaporwave, HDR, octane render</p>
   <img src="{{url_for('static', filename='aiart/9.png')}}" class="rounded mx-auto d-block margin20 img-fluid" alt="AI generated art by Midjourney with the prompt of: backrooms, nostalgia, 4k, photorealistic, vaporwave, HDR, octane render">
+  <hr>
+  <p>(Midjourney) Prompt: a post-apocalyptic city with nature grown everywhere, a robot standing in the middle, photorealistic, 4k, HDR, sci-fi, futuristic, unreal engine, creative</p>
+  <img src="{{url_for('static', filename='aiart/10.png')}}" class="rounded mx-auto d-block margin20 img-fluid" alt="AI generated art by Midjourney with the prompt of: a post-apocalyptic city with nature grown everywhere, a robot standing in the middle, photorealistic, 4k, HDR, sci-fi, futuristic, unreal engine, creative">
+  <hr>
+  <p>Feel free to send me some of your generations though my email. I might put them in the Gallery.</p>
+
 {% endblock %}

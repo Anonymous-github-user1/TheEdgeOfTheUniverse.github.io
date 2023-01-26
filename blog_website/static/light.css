@@ -22,13 +22,14 @@ body {
 
 .pagelink:hover, .plink:hover {
     font-weight: 450;
+    text-decoration: underline;
 }
 
 .pagelink:active, .plink:active {
     color:gray;
 }
 
-.btn-outline-primary {
+.btn-outline-primary, .dropdown-toggle {
     color: black;
     background-color: white;
     border-color: black;

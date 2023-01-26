@@ -1,3 +1,7 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
 @media only screen and (max-width: 595px) {
     body {
         width: 90%;
@@ -37,7 +41,7 @@
     }
 }
 
-@media only screen and (max-width: 830px) {
+@media only screen and (max-width: 930px) {
     .mobile {
       display: block;
     }
@@ -46,7 +50,7 @@
     }
   }
 
-@media only screen and (min-width: 830px) {
+@media only screen and (min-width: 930px) {
     .mobile {
       display: none;
     }
@@ -59,7 +63,7 @@ h1, h2 {
     margin: 20px;
 }
 
-.margin_con {
+.margin_contact {
     margin-top: 20px;
     margin-left: 20px;
 }
@@ -72,8 +76,17 @@ h1, h2 {
     font-size: 25px;
 }
 
-.copperplate {
-    font-family: Copperplate, Papyrus, fantasy;
+.unbounded {
+    font-family: 'Unbounded', cursive !important;
+}
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.cntitle {
+    font-family: 'ZCOOL QingKe HuangYou', sans-serif;
+    font-size: 140%;
 }
 
 .title {
@@ -88,8 +101,16 @@ h1, h2 {
     float: right;
 }
 
+.margin-right {
+    margin-right: 20px;
+}
+
 .lan-margin {
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 20px;
+}
+
+.dropdown-item {
+    font-size: 120%;
 }
