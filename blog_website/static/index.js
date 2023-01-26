@@ -1,5 +1,3 @@
-toggleTheme()
-
 function toggleTheme() {
     var theme = document.getElementById('stylesheet');
 
@@ -12,9 +10,11 @@ function toggleTheme() {
 }
 
 function switchDefault() {
-        var theme = document.getElementById('stylesheet');
-        const selected = localStorage.getItem("stylesheet");
-        if (selected !== null) {
+    var theme = document.getElementById('stylesheet');
+    const selected = localStorage.getItem("stylesheet");
+    if (selected !== null) {
         theme.href = selected;
     }
 }
+
+  
