@@ -1,2 +1,2 @@
 # TheEdgeOfTheUniverse
-My blog website
+My website. Topics from technology to science, philosophy to music.
