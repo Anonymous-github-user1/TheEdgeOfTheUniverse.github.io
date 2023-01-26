@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+{% block main %}
+<h2 class="varcolor">My programming projects</h2>
+
+<div class="margin20 ptext varcolor">    
+  <p>Some of my programming stuff</a></p>
+
+  <ul>
+    <li>
+        <h5 class="varcolor">My first ever website</h5>
+        <p>I learned about html and css with <a class="plink" target="_blank" rel="noopener noreferrer" href="https://www.theodinproject.com/">The Odin Project</a>. It is a great free open-source coding curriculum. It teaches you the basics of <a class="plink" target="_blank" rel="noopener noreferrer" href="https://youtu.be/dQw4w9WgXcQ">the internet</a>, <a class="plink" target="_blank" rel="noopener noreferrer" href="https://git-scm.com/">Git</a>, <a class="plink" target="_blank" rel="noopener noreferrer" href="https://github.com/">Github</a>, command line, html, css, javascript, etc. My first website was my simple recipes website made with the Odin Project.</p>
+        <img src="{{url_for('static', filename='programming/Odin_website.png')}}" class="rounded mx-auto d-block margin20 img-fluid" alt="My first very basic recipes website made with the Odin Project">
+    </li>
+
+    <li>
+        <p>Code #2</p>
+    </li>
+
+    <li>
+        <p>Code #3</p>
+    </li>
+
+    <li>
+        <p>Code #4</p>
+    </li>
+  </ul>
+{% endblock %}

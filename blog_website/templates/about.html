@@ -1,16 +1,5 @@
 {% extends "layout.html" %}
-
-{% block header %}
-<h1 class="title copperplate"><strong>The Edge of the Universe™</strong></h1>
-<div>
-  <a href="{{ url_for('home') }}" class="margin20 pagelink">Home</a>
-  <span class="themetog">
-    <button type="button" class="btn btn-outline-primary" id="togthemebtn">Light/Dark mode</button>
-  </span>
-</div>
-{% endblock %}
-
 {% block main %}
-<h2>About</h2>
-<p class="margin20 ptext varcolor">My blog website. Topics from technology to science, philosophy to music. IDK. Anything is possible at the edge of the universe!</p>
+<h2 class="varcolor">About</h2>
+<p class="margin20 ptext varcolor">My website. Topics from technology to science, philosophy to music. IDK. Anything is possible at the edge of the universe!</p>
 {% endblock %}

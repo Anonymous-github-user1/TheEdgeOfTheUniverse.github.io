@@ -11,10 +11,18 @@
 </head>
 
 <body>
+{% block header %}
   <header class="varcolor">
-    {% block header %}{% endblock %}
+      <h1 class="title copperplate"><strong>宇宙的边缘™</strong></h1>
+      <div>
+        <a href="{{ url_for('home_cn') }}" class="margin20 pagelink nodeclink">主页</a>
+        <span class="themetog">
+          <button type="button" class="btn btn-outline-primary" id="togthemebtn">亮/暗模式</button>
+        </span>
+      </div>
     <hr>
   </header>
+{% endblock %}
 
   <main>
     {% block main %}{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "chinese/layout_cn.html" %}
+{% block main %}
+<h2 class="varcolor">我的编程</h2>
+
+<div class="margin20 ptext varcolor">    
+  <p>我编程的一些东西</a></p>
+
+  <ul>
+    <li>
+        <h5 class="varcolor">我的第一个网站</h5>
+        <p>我通过 <a class="plink" target="_blank" rel="noopener noreferrer" href="https://www.theodinproject.com/">The Odin Project</a> 学到了 html 和 css的基础。这是一个很棒的免费开源编码课程。它会教你关于 <a class="plink" target="_blank" rel="noopener noreferrer" href="https://youtu.be/dQw4w9WgXcQ">互联网</a>、<a class="plink" target="_blank" rel="noopener noreferrer" href="https://git-scm.com/">Git</a>、<a class="plink" target="_blank" rel="noopener noreferrer" href="https://github.com/">Github</a>、命令行、html、css、javascript 等的基础知识。我的第一个网站是我用 The Odin Project 制作的简单食谱网站。</p>
+        <img src="{{url_for('static', filename='programming/Odin_website.png')}}" class="rounded mx-auto d-block margin20 img-fluid" alt="My first very basic recipes website made with the Odin Project">
+    </li>
+
+    <li>
+        <p>Code #2</p>
+    </li>
+
+    <li>
+        <p>Code #3</p>
+    </li>
+
+    <li>
+        <p>Code #4</p>
+    </li>
+  </ul>
+{% endblock %}

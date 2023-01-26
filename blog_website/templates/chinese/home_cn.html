@@ -1,18 +1,24 @@
 {% extends "chinese/layout_cn.html" %}
 
 {% block header %}
-<h1 class="title copperplate"><strong>宇宙的边缘™</strong></h1>
-<h2 class="spevent"> {{sp_event}} </h2>
-<div>
-  <a href="{{ url_for('about_cn') }}" class="margin20 pagelink nodeclink">关于</a>
-  <span class="themetog">
-    <button type="button" class="btn btn-outline-primary" id="togthemebtn">亮/暗模式</button>
-  </span>
-</div>
+<header class="varcolor">
+  <h1 class="title copperplate"><strong>宇宙的边缘™</strong></h1>
+  <h2 class="spevent"> {{sp_event}} </h2>
+  <div>
+    <a href="{{ url_for('about_cn') }}" class="margin20 pagelink nodeclink">关于</a>
+    <a href="{{ url_for('music_cn') }}" class="margin20 pagelink nodeclink">音乐</a>
+    <a href="{{ url_for('programming_cn') }}" class="margin20 pagelink nodeclink">编程</a>
+    <a href="{{ url_for('ai_img_cn') }}" class="margin20 pagelink nodeclink">AI 艺术</a>
+    <span class="themetog">
+      <button type="button" class="btn btn-outline-primary" id="togthemebtn">亮/暗模式</button>
+    </span>
+  </div>
+  <hr>
+</header>
 {% endblock %}
 
 {% block main %}
-<h2>消息</h2>
+<h2 class="varcolor">消息</h2>
   <div class="container">
     <div class="row">
       <div class="col-sm-6 mb-3 mb-sm-0">
@@ -38,9 +44,9 @@
       <div class="col-sm-6 mb-3 mb-sm-0">
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title">人工智能生成图像 <small class="text-muted datecolor">最新</small></h5>
-            <p class="card-text ptext">我最喜欢的一些 AI 生成的图像。最后更新: 2023 年 1 月 22 日</p>
-            <a href="{{ url_for('ai_img_cn') }}" class="btn btn-outline-secondary">更多</a>
+            <h5 class="card-title">Special title treatment <small class="text-muted datecolor">Date</small></h5>
+            <p class="card-text ptext">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-outline-secondary">更多</a>
           </div>
         </div>
       </div>

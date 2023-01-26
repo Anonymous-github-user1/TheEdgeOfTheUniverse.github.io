@@ -1,18 +1,25 @@
 {% extends "layout.html" %}
 
 {% block header %}
-<h1 class="title copperplate"><strong>The Edge of the Universe™</strong></h1>
-<h2 class="spevent"> {{sp_event}} </h2>
-<div>
-  <a href="{{ url_for('about') }}" class="margin20 pagelink">About</a>
-  <span class="themetog">
-    <button type="button" class="btn btn-outline-primary" id="togthemebtn">Light/Dark mode</button>
-  </span>
-</div>
+<header class="varcolor">
+  <h1 class="title copperplate"><strong>The Edge of the Universe™</strong></h1>
+  <h2 class="spevent"> {{sp_event}} </h2>
+  <div>
+    <a href="{{ url_for('about') }}" class="margin20 pagelink">About</a>
+    <a href="{{ url_for('music') }}" class="margin20 pagelink">Music</a>
+    <a href="{{ url_for('programming') }}" class="margin20 pagelink">Programming</a>
+    <a href="{{ url_for('ai_img') }}" class="margin20 pagelink">AI art</a>
+    <span class="themetog">
+      <button type="button" class="btn btn-outline-primary" id="togthemebtn">Light/Dark mode</button>
+    </span>
+  </div>
+  <hr>
+</header>
 {% endblock %}
 
 {% block main %}
-<h2>Posts</h2>
+<h2 class="varcolor">Blog</h2>
+
   <div class="container">
     <div class="row">
       <div class="col-sm-6 mb-3 mb-sm-0">
@@ -38,9 +45,9 @@
       <div class="col-sm-6 mb-3 mb-sm-0">
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title">AI Image Gallery <small class="text-muted datecolor">Latest</small></h5>
-            <p class="card-text ptext">Some of my favorite AI image generations. Last updated: January 22nd 2023</p>
-            <a href="{{ url_for('ai_img') }}" class="btn btn-outline-secondary">Read More</a>
+            <h5 class="card-title">Special title treatment <small class="text-muted datecolor">Date</small></h5>
+            <p class="card-text ptext">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-outline-secondary">Read More</a>
           </div>
         </div>
       </div>

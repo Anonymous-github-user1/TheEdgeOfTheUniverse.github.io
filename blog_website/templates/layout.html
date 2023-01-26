@@ -11,38 +11,47 @@
 </head>
 
 <body>
+{% block header %}
+
   <header class="varcolor">
-    {% block header %}{% endblock %}
+      <h1 class="title copperplate"><strong>The Edge of the Universe™</strong></h1>
+      <div>
+        <a href="{{ url_for('home') }}" class="margin20 pagelink">Home</a>
+        <span class="themetog">
+          <button type="button" class="btn btn-outline-primary" id="togthemebtn">Light/Dark mode</button>
+        </span>
+      </div>
     <hr>
   </header>
+{% endblock %}
 
-  <main>
-    {% block main %}{% endblock %}
-  </main>
-      
-  <footer class="varcolor ptext">
-    <hr>
-    <div>
-      <a class="language nodeclink plink lan-margin" href="{{ url_for('home_cn') }}">中文</a>
-      <h2 class="copperplate">The Edge of the Universe™</h2>
-      <span class="margin_con">Email:</span>
-      <a href="mailto:leetong.lam.1234@gmail.com" class="nodeclink plink">leetong.lam.1234@gmail.com</a>
-    </div>
+<main>
+  {% block main %}{% endblock %}
+</main>
     
-    <div>
-      <span class="margin_con">Twitter:</span>
-      <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/Mr_HelloEarth" class="nodeclink plink">@Mr_HelloEarth</a>
-    </div>
-
-    <div>
-      <span class="margin_con">Github:</span>
-      <a target="_blank" rel="noopener noreferrer" href="https://github.com/Anonymous-github-user1" class="nodeclink plink">Anonymous-github-user1</a>
-    </div>
-
-    <div class="footer-col footer-col-3 margin20">
-          <p>My blog website - The Edge of the Universe &#128640;</p>
-    </div>
-  </footer>
+<footer class="varcolor ptext">
+  <hr>
+  <div>
+    <a class="language nodeclink plink lan-margin" href="{{ url_for('home_cn') }}">中文</a>
+    <h2 class="copperplate">The Edge of the Universe™</h2>
+    <span class="margin_con">Email:</span>
+    <a href="mailto:leetong.lam.1234@gmail.com" class="nodeclink plink">leetong.lam.1234@gmail.com</a>
+  </div>
   
+  <div>
+    <span class="margin_con">Twitter:</span>
+    <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/Mr_HelloEarth" class="nodeclink plink">@Mr_HelloEarth</a>
+  </div>
+
+  <div>
+    <span class="margin_con">Github:</span>
+    <a target="_blank" rel="noopener noreferrer" href="https://github.com/Anonymous-github-user1" class="nodeclink plink">Anonymous-github-user1</a>
+  </div>
+
+  <div class="footer-col footer-col-3 margin20">
+        <p>My website - The Edge of the Universe &#128640;</p>
+  </div>
+</footer>
+
 </body>
 
