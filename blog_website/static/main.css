@@ -89,6 +89,10 @@ h1, h2 {
     font-size: 140%;
 }
 
+.larger {
+    font-size: 200% !important;
+}
+
 .title {
     font-size: 50px;
 }
