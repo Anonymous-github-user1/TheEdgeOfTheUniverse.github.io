@@ -68,3 +68,11 @@ body {
     font-family: "Brush Script MT", cursive;
     color: pink;
 }
+
+.dark-mode {
+    display: none;
+}
+
+.light-mode {
+    display: inline-block;
+}

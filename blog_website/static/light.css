@@ -46,3 +46,11 @@ body {
     font-family: "Brush Script MT", cursive;
     color: red;
 }
+
+.dark-mode {
+    display: inline-block;
+}
+
+.light-mode {
+    display: none;
+}
