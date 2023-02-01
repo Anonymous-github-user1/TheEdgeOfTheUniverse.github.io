@@ -15,5 +15,3 @@ function switchDefault() {
         theme.href = selected;
     }
 }
-
-  

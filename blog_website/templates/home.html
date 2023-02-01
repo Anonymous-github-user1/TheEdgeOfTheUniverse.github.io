@@ -1,6 +1,6 @@
 {% extends "layout.html" %}
 {% block header %}
-<header class="varcolor desktop">
+<header class="varcolor desktop-header">
   <h1 class="title"><strong class="unbounded">The Edge of the Universe™</strong></h1>
   <h2 class="spevent"> {{sp_event}} </h2>
   <nav>
@@ -15,16 +15,17 @@
   <hr>
 </header>
 
-<header class="varcolor mobile">
+<header class="varcolor mobile-header">
   <h1 class="title"><strong class="unbounded">The Edge of the Universe™</strong></h1>
   <h2 class="spevent"> {{sp_event}} </h2>
   
   <nav class="dropdown margin20">
-    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <button class="btn btn-secondary dropdown-toggle menu-button" type="button" data-bs-toggle="dropdown" aria-expanded="false">
       <i class="bi bi-list"></i>
     </button>
     <ul class="dropdown-menu">
       <li><a class="dropdown-item" href="{{ url_for('about') }}">About</a></li>
+      <hr>
       <li><a class="dropdown-item" href="{{ url_for('music') }}">Music</a></li>
       <li><a class="dropdown-item" href="{{ url_for('programming') }}">Programming</a></li>
       <li><a class="dropdown-item" href="{{ url_for('ai_gallery') }}">AI art gallery</a></li>

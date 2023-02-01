@@ -1,6 +1,6 @@
 {% extends "chinese/layout_cn.html" %}
 {% block header %}
-<header class="varcolor desktop">
+<header class="varcolor desktop-header">
   <h1 class="title"><strong class="cntitle">宇宙的边缘™</strong></h1>
   <h2 class="spevent"> {{sp_event}} </h2>
   <nav>
@@ -15,7 +15,7 @@
   <hr>
 </header>
 
-<header class="varcolor mobile">
+<header class="varcolor mobile-header">
   <h1 class="title"><strong class="cntitle">宇宙的边缘™</strong></h1>
   <h2 class="spevent"> {{sp_event}} </h2>
   
@@ -25,6 +25,7 @@
     </button>
     <ul class="dropdown-menu">
       <li><a class="dropdown-item" href="{{ url_for('about_cn') }}">关于</a></li>
+      <hr>
       <li><a class="dropdown-item" href="{{ url_for('music_cn') }}">音乐</a></li>
       <li><a class="dropdown-item" href="{{ url_for('programming_cn') }}">编程</a></li>
       <li><a class="dropdown-item" href="{{ url_for('ai_gallery_cn') }}">AI 艺术廊</a></li>
@@ -38,7 +39,7 @@
 {% endblock %}
 
 {% block main %}
-<h2 class="varcolor">消息</h2>
+<h2 class="varcolor">文章</h2>
   <div class="container">
     <div class="row">
       <div class="col-sm-6 mb-3 mb-sm-0">
