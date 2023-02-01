@@ -2,6 +2,23 @@ body {
     background-color: var(--background);
     margin: auto;
     --background: rgb(40, 40, 43);
+    border-top: 7px solid rgb(255, 252, 249);
+}
+
+header {
+    margin: 0 !important;
+    padding-left: var(--blankspace);
+    padding-right: var(--blankspace);
+    padding-top: 10;
+    background-color: rgb(30, 30, 33);
+}
+
+footer {
+    margin: 0 !important;
+    padding-left: var(--blankspace);
+    padding-right: var(--blankspace);
+    padding-bottom: 10;
+    background-color: rgb(30, 30, 33);
 }
 
 .varcolor {

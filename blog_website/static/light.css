@@ -2,7 +2,23 @@ body {
     background-color: var(--background);
     margin: auto;
     --background: rgb(255, 252, 249);
-    border-top: 5px solid #424242;
+    border-top: 7px solid #424242;
+}
+
+header {
+    margin: 0 !important;
+    padding-left: var(--blankspace);
+    padding-right: var(--blankspace);
+    padding-top: 10;
+    background-color: rgb(245, 242, 239);
+}
+
+footer {
+    margin: 0 !important;
+    padding-left: var(--blankspace);
+    padding-right: var(--blankspace);
+    padding-bottom: 10;
+    background-color: rgb(245, 242, 239);
 }
 
 .card {
