@@ -41,7 +41,7 @@
     }
 }
 
-@media only screen and (max-width: 930px) {
+@media only screen and (max-width: 1075px) {
     .mobile-header {
       display: block;
     }
@@ -50,7 +50,7 @@
     }
   }
 
-@media only screen and (min-width: 930px) {
+@media only screen and (min-width: 1075px) {
     .mobile-header {
       display: none;
     }

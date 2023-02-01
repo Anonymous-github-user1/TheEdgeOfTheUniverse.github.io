@@ -1,8 +1,8 @@
 body {
     background-color: var(--background);
-    margin:0 auto;
-    width:80%;
+    margin: auto;
     --background: rgb(255, 252, 249);
+    border-top: 5px solid #424242;
 }
 
 .card {
@@ -20,7 +20,7 @@ body {
     color: darkblue;
 }
 
-.pagelink:hover, .plink:hover {
+.pagelink:hover, .current, .plink:hover {
     font-weight: 450;
     text-decoration: underline;
 }

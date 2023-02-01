@@ -1,5 +1,20 @@
 {% extends "layout.html" %}
+{% block desktop_header %}
+<a href="{{ url_for('home') }}" class="margin20 pagelink nodeclink">Home</a>
+<a href="{{ url_for('about') }}" class="margin20 pagelink nodeclink current">About</a>
+<a href="{{ url_for('music') }}" class="margin20 pagelink nodeclink">Music</a>
+<a href="{{ url_for('programming') }}" class="margin20 pagelink nodeclink">Programming</a>
+<a href="{{ url_for('ai_gallery') }}" class="margin20 pagelink nodeclink">AI art gallery</a>
+{% endblock %}
+{% block mobile_header %}
+      <li><a class="dropdown-item" href="{{ url_for('home') }}">Home</a></li>
+      <hr>
+      <li><a class="dropdown-item current" href="{{ url_for('about') }}">About</a></li>
+      <li><a class="dropdown-item" href="{{ url_for('music') }}">Music</a></li>
+      <li><a class="dropdown-item" href="{{ url_for('programming') }}">Programming</a></li>
+      <li><a class="dropdown-item" href="{{ url_for('ai_gallery') }}">AI art gallery</a></li>
+{% endblock %}
 {% block main %}
 <h2 class="varcolor">About</h2>
 <p class="margin20 ptext varcolor">My website. Topics from technology to science, philosophy to music. IDK. Anything is possible at the edge of the universe!</p>
-{% endblock %}
+{% endblock %} 
