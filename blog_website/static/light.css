@@ -1,31 +1,14 @@
 body {
-    background-color: var(--background);
-    margin: auto;
     --background: rgb(255, 252, 249);
-    border-top: 7px solid #424242;
 }
 
-header {
-    margin: 0 !important;
-    padding-left: var(--blankspace);
-    padding-right: var(--blankspace);
-    padding-top: 10;
-    background-color: rgb(245, 242, 239);
-}
-
-footer {
-    margin: 0 !important;
-    padding-left: var(--blankspace);
-    padding-right: var(--blankspace);
-    padding-bottom: 10;
-    background-color: rgb(245, 242, 239);
+header, footer {
+    --header-footer-color: rgb(245, 242, 239);
 }
 
 .card {
-    margin-bottom: 30px;
-    min-height: 200px;
-    box-shadow: 0 5px 10px gray;
-    border-color: black
+    --card-box-shadow: 0 5px 10px gray;
+    --card-border-color: black
 }
 
 .pagelink:link, .plink:link {
@@ -34,11 +17,6 @@ footer {
 
 .pagelink:visited, .plink:visited {
     color: darkblue;
-}
-
-.pagelink:hover, .current, .plink:hover {
-    font-weight: 450;
-    text-decoration: underline;
 }
 
 .pagelink:active, .plink:active {
