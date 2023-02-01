@@ -1,4 +1,19 @@
 {% extends "chinese/layout_cn.html" %}
+{% block desktop_header %}
+  <a href="{{ url_for('home_cn') }}" class="margin20 pagelink nodeclink">主页</a>
+  <a href="{{ url_for('about_cn') }}" class="margin20 pagelink nodeclink">关于</a>
+  <a href="{{ url_for('music_cn') }}" class="margin20 pagelink nodeclink">音乐</a>
+  <a href="{{ url_for('programming_cn') }}" class="margin20 pagelink nodeclink">编程</a>
+  <a href="{{ url_for('ai_gallery_cn') }}" class="margin20 pagelink nodeclink"><strong>AI 艺术廊</strong></a>
+{% endblock %}
+{% block mobile_header %}
+  <li><a class="dropdown-item" href="{{ url_for('home_cn') }}">主页</a></li>
+  <hr>
+  <li><a class="dropdown-item" href="{{ url_for('about_cn') }}">关于</a></li>
+  <li><a class="dropdown-item" href="{{ url_for('music_cn') }}">音乐</a></li>
+  <li><a class="dropdown-item" href="{{ url_for('programming_cn') }}">编程</a></li>
+  <li><a class="dropdown-item" href="{{ url_for('ai_gallery_cn') }}"><strong>AI 艺术廊</strong></a></li>
+{% endblock %}
 {% block main %}
 <h2 class="varcolor">人工智能艺术廊</h2>
 

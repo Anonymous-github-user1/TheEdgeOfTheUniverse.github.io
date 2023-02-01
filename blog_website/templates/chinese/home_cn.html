@@ -1,43 +1,19 @@
 {% extends "chinese/layout_cn.html" %}
-{% block header %}
-<header class="varcolor desktop-header">
-  <h1 class="title"><strong class="cntitle">宇宙的边缘™</strong></h1>
-  <h2 class="spevent"> {{sp_event}} </h2>
-  <nav>
-    <a href="{{ url_for('about_cn') }}" class="margin20 pagelink nodeclink">关于</a>
-    <a href="{{ url_for('music_cn') }}" class="margin20 pagelink nodeclink">音乐</a>
-    <a href="{{ url_for('programming_cn') }}" class="margin20 pagelink nodeclink">编程</a>
-    <a href="{{ url_for('ai_gallery_cn') }}" class="margin20 pagelink nodeclink">AI 艺术廊</a>
-    <span class="themetog">
-      <button type="button" class="btn btn-outline-primary margin-right" onclick="toggleTheme()">模式 <i class="bi bi-brightness-high-fill light-mode"></i><i class="bi bi-moon-fill dark-mode"></i></button>
-    </span>
-  </nav>
-  <hr>
-</header>
-
-<header class="varcolor mobile-header">
-  <h1 class="title"><strong class="cntitle">宇宙的边缘™</strong></h1>
-  <h2 class="spevent"> {{sp_event}} </h2>
-  
-  <nav class="dropdown margin20">
-    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-list"></i>
-    </button>
-    <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="{{ url_for('about_cn') }}">关于</a></li>
-      <hr>
-      <li><a class="dropdown-item" href="{{ url_for('music_cn') }}">音乐</a></li>
-      <li><a class="dropdown-item" href="{{ url_for('programming_cn') }}">编程</a></li>
-      <li><a class="dropdown-item" href="{{ url_for('ai_gallery_cn') }}">AI 艺术廊</a></li>
-    </ul>
-    <span class="themetog">
-      <button type="button" class="btn btn-outline-primary" onclick="toggleTheme()">模式 <i class="bi bi-brightness-high-fill light-mode"></i><i class="bi bi-moon-fill dark-mode"></i></button>
-    </span>
-  </nav>
-  <hr>
-</header>
+{% block desktop_header %}
+  <a href="{{ url_for('home_cn') }}" class="margin20 pagelink nodeclink"><strong>主页</strong></a>
+  <a href="{{ url_for('about_cn') }}" class="margin20 pagelink nodeclink">关于</a>
+  <a href="{{ url_for('music_cn') }}" class="margin20 pagelink nodeclink">音乐</a>
+  <a href="{{ url_for('programming_cn') }}" class="margin20 pagelink nodeclink">编程</a>
+  <a href="{{ url_for('ai_gallery_cn') }}" class="margin20 pagelink nodeclink">AI 艺术廊</a>
 {% endblock %}
-
+{% block mobile_header %}
+  <li><a class="dropdown-item" href="{{ url_for('home_cn') }}"><strong>主页</strong></a></li>
+  <hr>
+  <li><a class="dropdown-item" href="{{ url_for('about_cn') }}">关于</a></li>
+  <li><a class="dropdown-item" href="{{ url_for('music_cn') }}">音乐</a></li>
+  <li><a class="dropdown-item" href="{{ url_for('programming_cn') }}">编程</a></li>
+  <li><a class="dropdown-item" href="{{ url_for('ai_gallery_cn') }}">AI 艺术廊</a></li>
+{% endblock %}
 {% block main %}
 <h2 class="varcolor">文章</h2>
   <div class="container">

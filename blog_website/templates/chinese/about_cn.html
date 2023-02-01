@@ -1,5 +1,21 @@
 {% extends "chinese/layout_cn.html" %}
+{% block desktop_header %}
+  <a href="{{ url_for('home_cn') }}" class="margin20 pagelink nodeclink">主页</a>
+  <a href="{{ url_for('about_cn') }}" class="margin20 pagelink nodeclink"><strong>关于</strong></a>
+  <a href="{{ url_for('music_cn') }}" class="margin20 pagelink nodeclink">音乐</a>
+  <a href="{{ url_for('programming_cn') }}" class="margin20 pagelink nodeclink">编程</a>
+  <a href="{{ url_for('ai_gallery_cn') }}" class="margin20 pagelink nodeclink">AI 艺术廊</a>
+{% endblock %}
+{% block mobile_header %}
+  <li><a class="dropdown-item" href="{{ url_for('home_cn') }}">主页</a></li>
+  <hr>
+  <li><a class="dropdown-item" href="{{ url_for('about_cn') }}"><strong>关于</strong></a></li>
+  <li><a class="dropdown-item" href="{{ url_for('music_cn') }}">音乐</a></li>
+  <li><a class="dropdown-item" href="{{ url_for('programming_cn') }}">编程</a></li>
+  <li><a class="dropdown-item" href="{{ url_for('ai_gallery_cn') }}">AI 艺术廊</a></li>
+{% endblock %}
 {% block main %}
 <h2 class="varcolor">关于</h2>
 <p class="margin20 ptext varcolor">我的网站。从技术到科学，从哲学到音乐。随便。在宇宙的边缘，一切皆有可能！</p>
+<img src="{{url_for('static', filename='JWST.jpg')}}" class="rounded mx-auto d-block margin20 img-fluid" alt="Photo taken by the James Webb Telescope of the Carina Nebula.">
 {% endblock %}

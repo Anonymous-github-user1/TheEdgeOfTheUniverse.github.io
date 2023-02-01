@@ -16,19 +16,37 @@
 </head>
 
 <body onLoad ="switchDefault()">
-{% block header %}
-  <header class="varcolor">
-      <h1 class="title"><strong class="cntitle">宇宙的边缘™</strong></h1>
-      <div>
-        <a href="{{ url_for('home_cn') }}" class="margin20 pagelink nodeclink">主页</a>
-        <span class="themetog">
-          <button type="button" class="btn btn-outline-primary margin-right" onclick="toggleTheme()">模式 <i class="bi bi-brightness-high-fill light-mode"></i><i class="bi bi-moon-fill dark-mode"></i></button>
-        </span>
-      </div>
+
+  <header class="varcolor desktop-header">
+    <h1 class="title"><strong class="cntitle">宇宙的边缘™</strong></h1>
+    <h2 class="spevent"> {{sp_event}} </h2>
+    <nav>
+      {% block desktop_header %}{% endblock %}
+      <span class="themetog">
+        <button type="button" class="btn btn-outline-primary margin-right" onclick="toggleTheme()">模式 <i class="bi bi-brightness-high-fill light-mode"></i><i class="bi bi-moon-fill dark-mode"></i></button>
+      </span>
+    </nav>
     <hr>
   </header>
-{% endblock %}
-
+  
+  <header class="varcolor mobile-header">
+    <h1 class="title"><strong class="cntitle">宇宙的边缘™</strong></h1>
+    <h2 class="spevent"> {{sp_event}} </h2>
+    
+    <nav class="dropdown margin20">
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="bi bi-list"></i>
+      </button>
+      <ul class="dropdown-menu">
+        {% block mobile_header %}{% endblock %}
+      </ul>
+      <span class="themetog">
+        <button type="button" class="btn btn-outline-primary" onclick="toggleTheme()">模式 <i class="bi bi-brightness-high-fill light-mode"></i><i class="bi bi-moon-fill dark-mode"></i></button>
+      </span>
+    </nav>
+    <hr>
+  </header>
+  
   <main>
     {% block main %}{% endblock %}
   </main>
